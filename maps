@@ -1,0 +1,4 @@
+library(maps)
+library(mapdata)
+map("world",regions = c("china","taiwan"),col = 'gray90',fill = TRUE)
+# map("china",fill = TRUE,col="gray90")
