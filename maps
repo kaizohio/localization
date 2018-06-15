@@ -32,3 +32,7 @@ kai<-read.csv("Province.csv",sep = ",",header = TRUE)
 mapBubbles(dF=kai, nameZSize="Pop1",nameZColour="Province",oceanCol="lightblue", landCol="grey90", addLegend=FALSE, nameX = "Lat", nameY = "Lon",mapRegion = "asia")
 
 mapBubbles(dF=map1, nameZSize="Num", nameZColour="Pop",oceanCol="lightblue", landCol="grey90", addLegend=FALSE, nameX = "Lat", nameY = "Lon",mapRegion = "asia",maxZVal=20,colourPalette=c('blue','red','orange'),borderCol="black",legendTitle = "aaa", colourLegendPos = "right")
+
+##
+
+mapPies(dF=area1, nameZ=c('Pop1','Pop2','Pop3'),oceanCol="lightblue", landCol="grey90", nameX = "Lat", nameY = "Lon",mapRegion = "asia",zColours = c('blue','red','orange','yellow'),borderCol="black", colourLegendPos = "right",addCatLegend=TRUE,symbolSize = 2,lwd = 1,ratio = 1)
