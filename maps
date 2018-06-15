@@ -36,3 +36,6 @@ mapBubbles(dF=map1, nameZSize="Num", nameZColour="Pop",oceanCol="lightblue", lan
 ##
 
 mapPies(dF=area1, nameZ=c('Pop1','Pop2','Pop3'),oceanCol="lightblue", landCol="grey90", nameX = "Lat", nameY = "Lon",mapRegion = "asia",zColours = c('blue','red','orange','yellow'),borderCol="black", colourLegendPos = "right",addCatLegend=TRUE,symbolSize = 2,lwd = 1,ratio = 1)
+##
+mapPies(dF=province, nameZ=c('Pop1','Pop2','Pop3'),oceanCol="lightblue", landCol="grey90", nameX = "Lat", nameY = "Lon",mapRegion = "asia",zColours = c('blue','red','orange','yellow'),borderCol="black", colourLegendPos = "right",addCatLegend=TRUE,symbolSize = 2,lwd = 1,ratio = 1,colourLegendPos="right")
+
