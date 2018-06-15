@@ -30,3 +30,5 @@ mapBubbles(dF=dF2, nameZSize="No.of.Documents",
 
 kai<-read.csv("Province.csv",sep = ",",header = TRUE)
 mapBubbles(dF=kai, nameZSize="Pop1",nameZColour="Province",oceanCol="lightblue", landCol="grey90", addLegend=FALSE, nameX = "Lat", nameY = "Lon",mapRegion = "asia")
+
+mapBubbles(dF=map1, nameZSize="Num", nameZColour="Pop",oceanCol="lightblue", landCol="grey90", addLegend=FALSE, nameX = "Lat", nameY = "Lon",mapRegion = "asia",maxZVal=20,colourPalette=c('blue','red','orange'),borderCol="black",legendTitle = "aaa", colourLegendPos = "right")
