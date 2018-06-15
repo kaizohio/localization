@@ -1,11 +1,14 @@
+############################################################################################################################################################
+Tradition method
+############################################################################################################################################################
 library(maps)
 library(mapdata)
 map("world",regions = c("china","taiwan"),col = 'gray90',fill = TRUE)
 # map("china",fill = TRUE,col="gray90")
 
-
-##############################################################################
-##############################################################################
+############################################################################################################################################################
+rworldmap example
+############################################################################################################################################################
 library(rworldmap) #example
 
 zz <-"ISO3V10   Country No.of.Documents Lat  Lon
@@ -27,15 +30,25 @@ mapBubbles(dF=dF2, nameZSize="No.of.Documents",
   nameZColour="Country",oceanCol="lightblue", landCol="wheat",
   addLegend=FALSE, nameX = "Lat", nameY = "Lon")
 
+############################################################################################################################################################
+rworldmap my code
+############################################################################################################################################################
+Bubble_map ##
+#############
+
+first of all we should make the custom data frame table, then:
 
 kai<-read.csv("Province.csv",sep = ",",header = TRUE)
+
 mapBubbles(dF=kai, nameZSize="Pop1",nameZColour="Province",oceanCol="lightblue", landCol="grey90", addLegend=FALSE, nameX = "Lat", nameY = "Lon",mapRegion = "asia")
 
 mapBubbles(dF=map1, nameZSize="Num", nameZColour="Pop",oceanCol="lightblue", landCol="grey90", addLegend=FALSE, nameX = "Lat", nameY = "Lon",mapRegion = "asia",maxZVal=20,colourPalette=c('blue','red','orange'),borderCol="black",legendTitle = "aaa", colourLegendPos = "right")
 
-##
+###########
 
 mapPies(dF=area1, nameZ=c('Pop1','Pop2','Pop3'),oceanCol="lightblue", landCol="grey90", nameX = "Lat", nameY = "Lon",mapRegion = "asia",zColours = c('blue','red','orange','yellow'),borderCol="black", colourLegendPos = "right",addCatLegend=TRUE,symbolSize = 2,lwd = 1,ratio = 1)
-##
+
+###########
+
 mapPies(dF=province, nameZ=c('Pop1','Pop2','Pop3'),oceanCol="lightblue", landCol="grey90", nameX = "Lat", nameY = "Lon",mapRegion = "asia",zColours = c('blue','red','orange','yellow'),borderCol="black", colourLegendPos = "right",addCatLegend=TRUE,symbolSize = 2,lwd = 1,ratio = 1,colourLegendPos="right")
 
