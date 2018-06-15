@@ -26,3 +26,7 @@ dF2 <- read.table(textConnection(zz), header = TRUE)
 mapBubbles(dF=dF2, nameZSize="No.of.Documents",
   nameZColour="Country",oceanCol="lightblue", landCol="wheat",
   addLegend=FALSE, nameX = "Lat", nameY = "Lon")
+
+
+kai<-read.csv("Province.csv",sep = ",",header = TRUE)
+mapBubbles(dF=kai, nameZSize="Pop1",nameZColour="Province",oceanCol="lightblue", landCol="grey90", addLegend=FALSE, nameX = "Lat", nameY = "Lon",mapRegion = "asia")
